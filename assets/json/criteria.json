@@ -1,0 +1,3004 @@
+{
+    "person_category" : {
+        "title" : "Person",
+        "subcriteria" : [
+            {   
+                "name": "id",
+                "display" : "CitizenBuilder Id",
+                "statements" : [
+                    {
+                        "statement" : "is", 
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "is not",
+                        "fields" : ["input"]
+                    }
+                ]
+            },
+            { 
+                "name": "first_name", 
+                "display" : "First Name", 
+                "statements" : [
+                    {
+                        "statement" : "is", 
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "is not",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "contains",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "does not contain",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "last_name", 
+                "display" : "Last Name", 
+                "statements" : [
+                    {
+                        "statement" : "is", 
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "is not",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "contains",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "does not contain",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "middle_name", 
+                "display" : "Middle Name", 
+                "statements" : [
+                    {
+                        "statement" : "is", 
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "is not",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "contains",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "does not contain",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "nationbuilder_id", 
+                "display" : "Nationbuilder Id", 
+                "statements" : [
+                    {
+                        "statement" : "is", 
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "user_id", 
+                "display" : "User Account", 
+                "statements" : [
+                    {
+                        "statement" : "confirmed",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "pending",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "edit_lock", 
+                "display" : "Account is Locked",
+                "statements" : [
+                    {
+                        "statement" : "Yes",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "No",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "recruiter_id", 
+                "display" : "Referral Id", 
+                "statements" : [
+                    {
+                        "statement" : "is", 
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "is not", 
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "is_volunteer", 
+                "display" : "Volunteer Interest", 
+                "statements" : [
+                    {
+                        "statement" : "Yes",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "No",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "is_banned", 
+                "display" : "Banned", 
+                "statements" : [
+                    {
+                        "statement" : "Yes",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "No",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "is_deceased", 
+                "display" : "Deceased", 
+                "statements" : [
+                    {
+                        "statement" : "Yes",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "No",
+                        "fields" : []
+                    }
+                ]
+            }
+        ]
+    },
+    "personal" : {
+        "title" : "Personal",
+        "subcriteria" : [
+            { 
+                "name": "birthdate", 
+                "display" : "Birth Date", 
+                "statements" : [
+                    {
+                        "statement" : "is",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is not",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "before",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is before or on",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "after",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is after or on",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is between",
+                        "fields" : ["date", "and" , "date"]
+                    }
+                ]
+            },
+            { 
+                "name": "sex", 
+                "display" : "Sex", 
+                "statements" : [
+                    {
+                        "statement" : "Female",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "Male",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "Not Specified",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "is_veteran", 
+                "display" : "Is Veteran", 
+                "statements" : [
+                    {
+                        "statement" : "Yes",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "No",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "coalition", 
+                "display" : "Coalitions", 
+                "statements" : [
+                    {
+                        "statement" : "with any",
+                        "fields" : ["selectize:coalitions"]
+                    },
+                    {
+                        "statement" : "with all",
+                        "fields" : ["selectize:coalitions"]
+                    },
+                    {
+                        "statement" : "with none",
+                        "fields" : ["selectize:coalitions"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "occupation", 
+                "display" : "Occupations", 
+                "statements" : [
+                    {
+                        "statement" : "is", 
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "is not",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "contains",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "does not contain",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "employer", 
+                "display" : "Employer", 
+                "statements" : [
+                    {
+                        "statement" : "is", 
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "is not",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "contains",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "does not contain",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "website", 
+                "display" : "Website", 
+                "statements" : [
+                    {
+                        "statement" : "is", 
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "is not",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "contains",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "does not contain",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "note", 
+                "display" : "Note", 
+                "statements" : [
+                    {
+                        "statement" : "contains",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "does not contain",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "avatar", 
+                "display" : "Has avatar", 
+                "statements" : [
+                    {
+                        "statement" : "Yes",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "No",
+                        "fields" : []
+                    }
+                ]
+            }
+        ]
+    },
+    "address" : {
+        "title" : "Address",
+        "subcriteria" : [
+            { 
+                "name": "exists", 
+                "display" : "Address Exists", 
+                "statements" : [
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "address1", 
+                "display" : "Address Line 1", 
+                "statements" : [
+                    {
+                        "statement" : "is", 
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "is not",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "contains",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "does not contain",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "address2", 
+                "display" : "Address Line 2", 
+                "statements" : [
+                    {
+                        "statement" : "is", 
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "is not",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "contains",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "does not contain",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "city", 
+                "display" : "City", 
+                "statements" : [
+                    {
+                        "statement" : "is", 
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "is not",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "contains",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "does not contain",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "state_abbreviation", 
+                "display" : "State", 
+                "statements" : [
+                    {
+                        "statement" : "with any",
+                        "fields" : ["selectize:states"]
+                    },
+                    {
+                        "statement" : "with all",
+                        "fields" : ["selectize:states"]
+                    },
+                    {
+                        "statement" : "with none",
+                        "fields" : ["selectize:states"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "zip", 
+                "display" : "Zip", 
+                "statements" : [
+                    {
+                        "statement" : "is", 
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "is not",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "contains",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "does not contain",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "zip", 
+                "display" : "Zip", 
+                "statements" : [
+                    {
+                        "statement" : "with any",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "with none",
+                        "fields" : ["input"]
+                    }
+                ]
+            },
+            { 
+                "name": "county", 
+                "display" : "County", 
+                "statements" : [
+                    {
+                        "statement" : "with any",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "with none",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "coordinates", 
+                "display" : "Geo Coordinates", 
+                "statements" : [
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            }
+        ]
+    },
+    "email_category" : {
+        "title" : "Email",
+        "subcriteria" : [
+            { 
+                "name": "email", 
+                "display" : "Email", 
+                "statements" : [
+                    {
+                        "statement" : "is", 
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "is not",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "contains",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "does not contain",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "cached_primary_email_address", 
+                "display" : "Primary Email", 
+                "statements" : [
+                    {
+                        "statement" : "is", 
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "is not",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "contains",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "does not contain",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "is_bad", 
+                "display" : "Has Bad Email(s)", 
+                "statements" : [
+                    {
+                        "statement" : "Yes",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "No",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "all emails",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "primary email",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "email_opt_in", 
+                "display" : "Emailable", 
+                "statements" : [
+                    {
+                        "statement" : "Yes",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "No",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "has_cosa_email", 
+                "display" : "Has COSaction Email", 
+                "statements" : [
+                    {
+                        "statement" : "Yes",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "No",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "full",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "forward-only",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "email_confirmed", 
+                "display" : "Email Confirmed",
+                "statements" : [
+                    {
+                        "statement" : "primary",
+                        "fields" : ["select"],
+                        "select" : [
+                            {
+                                "statement" : "Yes",
+                                "fields" : []
+                            },
+                            {
+                                "statement" : "No",
+                                "fields" : []
+                            },
+                            {
+                                "statement" : "Pending",
+                                "fields" : []
+                            },
+                            {
+                                "statement" : "Unsubscribed",
+                                "fields" : []
+                            }
+                        ]
+                    },
+                    {
+                        "statement" : "not primary",
+                        "fields" : ["select"],
+                        "select" : [
+                            {
+                                "statement" : "Yes",
+                                "fields" : []
+                            },
+                            {
+                                "statement" : "No",
+                                "fields" : []
+                            },
+                            {
+                                "statement" : "Pending",
+                                "fields" : []
+                            },
+                            {
+                                "statement" : "Unsubscribed",
+                                "fields" : []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "phone_category" : {
+        "title" : "Phone",
+        "subcriteria" : [
+            { 
+                "name": "phone", 
+                "display" : "Home Phone", 
+                "statements" : [
+                    {
+                        "statement" : "is", 
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "is not",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "contains",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "does not contain",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "mobile", 
+                "display" : "Mobile Phone", 
+                "statements" : [
+                    {
+                        "statement" : "is", 
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "is not",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "contains",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "does not contain",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "work_phone_number", 
+                "display" : "Work Phone", 
+                "statements" : [
+                    {
+                        "statement" : "is", 
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "is not",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "contains",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "does not contain",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "any_phone", 
+                "display" : "Any Phone", 
+                "statements" : [
+                    {
+                        "statement" : "is", 
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "is not",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "contains",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "does not contain",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "bad_phone", 
+                "display" : "Bad Phone", 
+                "statements" : [
+                    {
+                        "statement" : "Bad",
+                        "fields" : ["select"],
+                        "select" : [
+                            "Mobile Phone", 
+                            "Home Phone", 
+                            "Work Phone", 
+                            "Any Phone", 
+                            "Existing mobile phone", 
+                            "Existing home phone", 
+                            "Existing work phone", 
+                            "Any existing phone",  
+                            "All existing phone"
+                        ]
+                    },
+                    {
+                        "statement" : "Not Bad",
+                        "fields" : ["select"],
+                        "select" : [
+                            "Mobile Phone", 
+                            "Home Phone", 
+                            "Work Phone", 
+                            "Any Phone", 
+                            "Existing mobile phone", 
+                            "Existing home phone", 
+                            "Existing work phone", 
+                            "Any existing phone",  
+                            "All existing phone"
+                        ]
+                    }
+                ]
+            },
+            { 
+                "name": "callable", 
+                "display" : "Callable", 
+                "statements" : [
+                    {
+                        "statement" : "Yes",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "No",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "texable", 
+                "display" : "Texable", 
+                "statements" : [
+                    {
+                        "statement" : "Yes",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "No",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "sms_messageable", 
+                "display" : "SMS Messageable", 
+                "statements" : [
+                    {
+                        "statement" : "Yes",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "No",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "mobile_opt_in", 
+                "display" : "Text Blast Welcome", 
+                "statements" : [
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "before",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is before or on",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "after",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is after or on",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is between",
+                        "fields" : [{"type" : "date", "field" : "date_1"}, "and", {"type" : "date", "field" : "date_2"}]
+                    }
+                ]
+            },
+            { 
+                "name": "text_welcome", 
+                "display" : "Text Welcome", 
+                "statements" : [
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "before",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is before or on",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "after",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is after or on",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is between",
+                        "fields" : [{"type" : "date", "field" : "date_1"}, "and", {"type" : "date", "field" : "date_2"}]
+                    }
+                ]
+            },
+            { 
+                "name": "text_blast_blacklist", 
+                "display" : "Text Blast Blacklist", 
+                "statements" : [
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "before",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is before or on",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "after",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is after or on",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is between",
+                        "fields" : [{"type" : "date", "field" : "date_1"}, "and", {"type" : "date", "field" : "date_2"}]
+                    }
+                ]
+            },
+            { 
+                "name": "text_blacklist", 
+                "display" : "Text Blacklist", 
+                "statements" : [
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "before",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is before or on",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "after",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is after or on",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is between",
+                        "fields" : [{"type" : "date", "field" : "date_1"}, "and", {"type" : "date", "field" : "date_2"}]
+                    }
+                ]
+            },
+            { 
+                "name": "text_blast_optin_commands", 
+                "display" : "Text Blast Opt-in Commands", 
+                "statements" : [
+                    {
+                        "statement" : "stop",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "start",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]},
+            { 
+                "name": "text_optin_commands", 
+                "display" : "Text Opt-in Commands", 
+                "statements" : [
+                    {
+                        "statement" : "stop",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "start",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "mobile_text_rejected", 
+                "display" : "Mobile Text Rejected", 
+                "statements" : [
+                    {
+                        "statement" : "is", 
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is not",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "is in the last",
+                        "fields" : ["days"]
+                    },
+                    {
+                        "statement" : "not in the last",
+                        "fields" : ["days"]
+                    },
+                    {
+                        "statement" : "is within",
+                        "fields" : [{"type" : "days", "field" : "number_1"}, "and", {"type" : "days", "field" : "number_1"}, "day(s)"]
+                    },
+                    {
+                        "statement" : "before",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is before or on",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "after",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is after or on",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is between",
+                        "fields" : [{"type" : "date", "field" : "date_1"}, "and", {"type" : "date", "field" : "date_2"}]
+                    }
+                ]
+            }
+        ]
+    },
+    "voting_category" : {
+        "title" : "Voting",
+        "subcriteria" : [
+            { 
+                "name": "state", 
+                "display" : "States", 
+                "statements" : [
+                    {
+                        "statement" : "with any",
+                        "fields" : ["selectize:states"]
+                    },
+                    {
+                        "statement" : "with none",
+                        "fields" : ["selectize:states"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "upper_hous_district", 
+                "display" : "Upper House", 
+                "statements" : [
+                    {
+                        "statement" : "with any",
+                        "fields" : ["selectize:upper_house"]
+                    },
+                    {
+                        "statement" : "with none",
+                        "fields" : ["selectize:upper_house"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "lower_hous_district", 
+                "display" : "Lower House", 
+                "statements" : [
+                    {
+                        "statement" : "with any",
+                        "fields" : ["selectize:lower_house"]
+                    },
+                    {
+                        "statement" : "with none",
+                        "fields" : ["selectize:lower_house"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "in_target_district", 
+                "display" : "In Target District", 
+                "statements" : [
+                    {
+                        "statement" : "Yes",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "No",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "state_region", 
+                "display" : "State Region", 
+                "statements" : [
+                    {
+                        "statement" : "with any",
+                        "fields" : ["selectize:state_region"]
+                    },
+                    {
+                        "statement" : "with none",
+                        "fields" : ["selectize:state_region"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            }
+        ]
+    },
+    "roles_assignments" : {
+        "title" : "Roles/Assignments",
+        "subcriteria" : [
+            { 
+                "name": "roles", 
+                "display" : "System Roles", 
+                "statements" : [
+                    {
+                        "statement" : "with any",
+                        "fields" : ["selectize:system_roles"]
+                    },
+                    {
+                        "statement" : "with all",
+                        "fields" : ["selectize:system_roles"]
+                    },
+                    {
+                        "statement" : "with none",
+                        "fields" : ["selectize:system_roles"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "ranks", 
+                "display" : "Custom Roles", 
+                "statements" : [
+                    {
+                        "statement" : "with any",
+                        "fields" : ["selectize:custom_roles"]
+                    },
+                    {
+                        "statement" : "with all",
+                        "fields" : ["selectize:custom_roles"]
+                    },
+                    {
+                        "statement" : "with none",
+                        "fields" : ["selectize:custom_roles"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "roles_coverage", 
+                "display" : "Roles Coverage", 
+                "statements" : [
+                    {
+                        "statement" : "exists",
+                        "fields" : ["selectize:roles"]
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : ["selectize:roles"]
+                    }
+                ]
+            },
+            { 
+                "name": "dashboard_user", 
+                "display" : "Dashboard User", 
+                "statements" : [
+                    {
+                        "statement" : "Yes",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "No",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "tp_team_membership", 
+                "display" : "TP Team Membership", 
+                "statements" : [
+                    {
+                        "statement" : "is on any",
+                        "fields" : ["selectize:teams"]
+                    },
+                    {
+                        "statement" : "is on all",
+                        "fields" : ["selectize:teams"]
+                    },
+                    {
+                        "statement" : "is on none",
+                        "fields" : ["selectize:teams"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "not exists",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "state_assignments", 
+                "display" : "State Assignments", 
+                "statements" : [
+                    {
+                        "statement" : "with any",
+                        "fields" : ["selectize:states"]
+                    },
+                    {
+                        "statement" : "with all",
+                        "fields" : ["selectize:states"]
+                    },
+                    {
+                        "statement" : "with none",
+                        "fields" : ["selectize:states"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "state_region_assignments", 
+                "display" : "State Region Assignments", 
+                "statements" : [
+                    {
+                        "statement" : "with any",
+                        "fields" : ["selectize:state_region"]
+                    },
+                    {
+                        "statement" : "with all",
+                        "fields" : ["selectize:state_region"]
+                    },
+                    {
+                        "statement" : "with none",
+                        "fields" : ["selectize:state_region"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "district_assignments", 
+                "display" : "District Assignments", 
+                "statements" : [
+                    {
+                        "statement" : "with any",
+                        "fields" : ["selectize:district"]
+                    },
+                    {
+                        "statement" : "with all",
+                        "fields" : ["selectize:district"]
+                    },
+                    {
+                        "statement" : "with none",
+                        "fields" : ["selectize:district"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "national_assignments", 
+                "display" : "National Assignments", 
+                "statements" : [
+                    {
+                        "statement" : "Yes",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "No",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "lmt_applicants", 
+                "display" : "LMT Applicants", 
+                "statements" : [
+                    {
+                        "statement" : "with any",
+                        "fields" : ["select"],
+                        "select" : ["Open", "In Process", "Onboarding"]
+                    },
+                    {
+                        "statement" : "with all",
+                        "fields" : ["select"],
+                        "select" : ["Open", "In Process", "Onboarding"]
+                    },
+                    {
+                        "statement" : "with none",
+                        "fields" : ["select"],
+                        "select" : ["Open", "In Process", "Onboarding"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            }
+        ]
+    },
+    "user_lists" : {
+        "title" : "Lists",
+        "subcriteria" : [
+            { 
+                "name": "lists", 
+                "display" : "Static Lists", 
+                "statements" : [
+                    {
+                        "statement" : "is on any",
+                        "fields" : ["selectize:lists"]
+                    },
+                    {
+                        "statement" : "is on all",
+                        "fields" : ["selectize:lists"]
+                    },
+                    {
+                        "statement" : "is on none",
+                        "fields" : ["selectize:lists"]
+                    }
+                ]
+            }
+        ]
+    },
+    "person_tags" : {
+        "title" : "Tags",
+        "subcriteria" : [
+            { 
+                "name": "tags_array", 
+                "display" : "All Tags", 
+                "statements" : [
+                    {
+                        "statement" : "with any",
+                        "fields" : ["selectize:tags"]
+                    },
+                    {
+                        "statement" : "with all",
+                        "fields" : ["selectize:tags"]
+                    },
+                    {
+                        "statement" : "with none",
+                        "fields" : ["selectize:tags"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "tags_array", 
+                "display" : "System Tags", 
+                "statements" : [
+                    {
+                        "statement" : "with any",
+                        "fields" : ["selectize:system_tags"]
+                    },
+                    {
+                        "statement" : "with all",
+                        "fields" : ["selectize:system_tags"]
+                    },
+                    {
+                        "statement" : "with none",
+                        "fields" : ["selectize:system_tags"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "tags_array", 
+                "display" : "Custom Tags", 
+                "statements" : [
+                    {
+                        "statement" : "with any",
+                        "fields" : ["selectize:custom_tags"]
+                    },
+                    {
+                        "statement" : "with all",
+                        "fields" : ["selectize:custom_tags"]
+                    },
+                    {
+                        "statement" : "with none",
+                        "fields" : ["selectize:custom_tags"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            }
+        ]
+    },
+    "contact" : {
+        "title" : "Contact",
+        "subcriteria" : [
+            { 
+                "name": "email_opt_in", 
+                "display" : "Email Blast Opt-In", 
+                "statements" : [
+                    {
+                        "statement" : "Yes",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "No",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "mobile_opt_in", 
+                "display" : "Text Blast Opt-In", 
+                "statements" : [
+                    {
+                        "statement" : "Yes",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "No",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "do_not_call", 
+                "display" : "Do Not Call", 
+                "statements" : [
+                    {
+                        "statement" : "Yes",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "No",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "do_not_contact", 
+                "display" : "Do Not Contact", 
+                "statements" : [
+                    {
+                        "statement" : "Yes",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "No",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "keep_me_informed", 
+                "display" : "Keep Me Informed", 
+                "statements" : [
+                    {
+                        "statement" : "Yes",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "No",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "followup_completed",
+                "display" : "Followup Status", 
+                "statements" : [
+                    {
+                        "statement" : "Yes",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "No",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "last_contacted_at", 
+                "display" : "Last Contacted Date", 
+                "statements" : [
+                    {
+                        "statement" : "is", 
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is not",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "is in the last",
+                        "fields" : ["days"]
+                    },
+                    {
+                        "statement" : "not in the last",
+                        "fields" : ["days"]
+                    },
+                    {
+                        "statement" : "is within",
+                        "fields" : [{"type" : "days", "field" : "number_1"}, "and", {"type" : "days", "field" : "number_1"}, "day(s)"]
+                    },
+                    {
+                        "statement" : "before",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is before or on",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "after",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is after or on",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is between",
+                        "fields" : [{"type" : "date", "field" : "date_1"}, "and", {"type" : "date", "field" : "date_2"}]
+                    }
+                ]
+            },
+            { 
+                "name": "last_contacted", 
+                "display" : "Last Contacted By", 
+                "statements" : [
+                    {
+                        "statement" : "is", 
+                        "fields" : ["selectize:person"]
+                    },
+                    {
+                        "statement" : "is not",
+                        "fields" : ["selectize:person"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            }
+        ]
+    },
+    "activity" : {
+        "title" : "Activity",
+        "subcriteria" : [
+            { 
+                "name": "signed_petition", 
+                "display" : "Signed Petition", 
+                "statements" : [
+                    {
+                        "statement" : "Yes",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "No",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "Revoked",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "signed_petition_at", 
+                "display" : "Signed Petition Date", 
+                "statements" : [
+                    {
+                        "statement" : "is", 
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is not",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "is in the last",
+                        "fields" : ["days"]
+                    },
+                    {
+                        "statement" : "not in the last",
+                        "fields" : ["days"]
+                    },
+                    {
+                        "statement" : "is within",
+                        "fields" : [{"type" : "days", "field" : "number_1"}, "and", {"type" : "days", "field" : "number_1"}, "day(s)"]
+                    },
+                    {
+                        "statement" : "before",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is before or on",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "after",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is after or on",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is between",
+                        "fields" : [{"type" : "date", "field" : "date_1"}, "and", {"type" : "date", "field" : "date_2"}]
+                    }
+                ]
+            },
+            { 
+                "name": "signed_volunteer_agreement", 
+                "display" : "Signed Volunteer Agreement", 
+                "statements" : [
+                    {
+                        "statement" : "Yes",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "No",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "Pending",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "social_capital_in_cents", 
+                "display" : "Social Capital", 
+                "statements" : [
+                    {
+                        "statement" : "is",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "is not",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "is less than",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "is less than or equal to",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "is greater than",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "is greater than or equal to",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "is between",
+                        "fields" : ["input", "input"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "earned_social_capital", 
+                "display" : "Earned Social Capital", 
+                "statements" : [
+                    {
+                        "statement" : "is less than",
+                        "fields" : [{"type" : "number", "field" : "number_1"}, "before", {"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is less than or equal to",
+                        "fields" : [{"type" : "number", "field" : "number_1"}, "before", {"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is greater than",
+                        "fields" : [{"type" : "number", "field" : "number_1"}, "before", {"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is greater than or equal to",
+                        "fields" : [{"type" : "number", "field" : "number_1"}, "before", {"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is between",
+                        "fields" : [{"type" : "number", "field" : "number_1"}, "and", {"type" : "number", "field" : "number_2"}, "before", {"type" : "date", "field" : "date_1"}]
+                    }
+                ]
+            },
+            { 
+                "name": "cb_activity", 
+                "display" : "CitizenBuilder Activity", 
+                "statements" : [
+                    {
+                        "statement" : "is before",
+                        "fields" : ["date", "selectize:activies"]
+                    },
+                    {
+                        "statement" : "is after",
+                        "fields" : ["date", "selectize:activies"]
+                    },
+                    {
+                        "statement" : "is between",
+                        "fields" : [{"type" : "date", "field" : "date_1"}, "and", {"type" : "date", "field" : "date_2"}, "selectize:activies"]
+                    }
+                ]
+            },
+            { 
+                "name": "last_sign_in_at", 
+                "display" : "Last Login At", 
+                "statements" : [
+                    {
+                        "statement" : "is", 
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is not",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "is in the last",
+                        "fields" : ["days"]
+                    },
+                    {
+                        "statement" : "not in the last",
+                        "fields" : ["days"]
+                    },
+                    {
+                        "statement" : "is within",
+                        "fields" : [{"type" : "days", "field" : "number_1"}, "and", {"type" : "days", "field" : "number_1"}, "day(s)"]
+                    },
+                    {
+                        "statement" : "before",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is before or on",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "after",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is after or on",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is between",
+                        "fields" : [{"type" : "date", "field" : "date_1"}, "and", {"type" : "date", "field" : "date_2"}]
+                    }
+                ]
+            },
+            { 
+                "name": "last_activity_at", 
+                "display" : "Last Activity At", 
+                "statements" : [
+                    {
+                        "statement" : "is", 
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is not",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "is in the last",
+                        "fields" : ["days"]
+                    },
+                    {
+                        "statement" : "not in the last",
+                        "fields" : ["days"]
+                    },
+                    {
+                        "statement" : "is within",
+                        "fields" : [{"type" : "days", "field" : "number_1"}, "and", {"type" : "days", "field" : "number_1"}, "day(s)"]
+                    },
+                    {
+                        "statement" : "before",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is before or on",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "after",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is after or on",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is between",
+                        "fields" : [{"type" : "date", "field" : "date_1"}, "and", {"type" : "date", "field" : "date_2"}]
+                    }
+                ]
+            },
+            { 
+                "name": "is_recruiter", 
+                "display" : "Is Recruiter", 
+                "statements" : [
+                    {
+                        "statement" : "Yes",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "No",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "unread_notifications", 
+                "display" : "Unread Notifications", 
+                "statements" : [
+                    {
+                        "statement" : "is",
+                        "fields" : ["number"]
+                    },
+                    {
+                        "statement" : "is not",
+                        "fields" : ["number"]
+                    },
+                    {
+                        "statement" : "is less than",
+                        "fields" : ["number"]
+                    },
+                    {
+                        "statement" : "is less than or equal to",
+                        "fields" : ["number"]
+                    },
+                    {
+                        "statement" : "is greater than",
+                        "fields" : ["number"]
+                    },
+                    {
+                        "statement" : "is greater than or equal to",
+                        "fields" : ["number"]
+                    },
+                    {
+                        "statement" : "is between",
+                        "fields" : ["number", "number"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "registered_in_cosu", 
+                "display" : "Registered in COSU", 
+                "statements" : [
+                    {
+                        "statement" : "Yes",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "No",
+                        "fields" : []
+                    }
+                ]
+            }
+        ]
+    },
+    "origin" : {
+        "title" : "Origin",
+        "subcriteria" : [
+            { 
+                "name": "created_at", 
+                "display" : "Creation Date", 
+                "statements" : [
+                    {
+                        "statement" : "is", 
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is not",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is in the last",
+                        "fields" : ["days"]
+                    },
+                    {
+                        "statement" : "not in the last",
+                        "fields" : ["days"]
+                    },
+                    {
+                        "statement" : "is within",
+                        "fields" : [{"type" : "days", "field" : "number_1"}, "and", {"type" : "days", "field" : "number_1"}, "day(s)"]
+                    },
+                    {
+                        "statement" : "before",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is before or on",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "after",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is after or on",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is between",
+                        "fields" : [{"type" : "date", "field" : "date_1"}, "and", {"type" : "date", "field" : "date_2"}]
+                    }
+                ]
+            },
+            { 
+                "name": "sign_up_date", 
+                "display" : "Sign Up Date", 
+                "statements" : [
+                    {
+                        "statement" : "is", 
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is not",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "is in the last",
+                        "fields" : ["days"]
+                    },
+                    {
+                        "statement" : "not in the last",
+                        "fields" : ["days"]
+                    },
+                    {
+                        "statement" : "is within",
+                        "fields" : [{"type" : "days", "field" : "number_1"}, "and", {"type" : "days", "field" : "number_1"}, "day(s)"]
+                    },
+                    {
+                        "statement" : "before",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is before or on",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "after",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is after or on",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is between",
+                        "fields" : [{"type" : "date", "field" : "date_1"}, "and", {"type" : "date", "field" : "date_2"}]
+                    }
+                ]
+            },
+            { 
+                "name": "recruited_by", 
+                "display" : "Recruited by", 
+                "statements" : [
+                    {
+                        "statement" : "is",
+                        "fields" : ["selectize:person"]
+                    },
+                    {
+                        "statement" : "is not",
+                        "fields" : ["selectize:person"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : ["selectize:person"]
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : ["selectize:person"]
+                    }
+                ]
+            },
+            { 
+                "name": "recruited_by_campaign", 
+                "display" : "Recruited by (Campaign name)", 
+                "statements" : [
+                    {
+                        "statement" : "is",
+                        "fields" : ["selectize:campaign"]
+                    },
+                    {
+                        "statement" : "is not",
+                        "fields" : ["selectize:campaign"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : ["selectize:campaign"]
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : ["selectize:campaign"]
+                    }
+                ]
+            },
+            { 
+                "name": "captured_by", 
+                "display" : "Captured by (FB Leads Campaign)", 
+                "statements" : [
+                    {
+                        "statement" : "is",
+                        "fields" : ["selectize:fb_campaign"]
+                    },
+                    {
+                        "statement" : "is not",
+                        "fields" : ["selectize:fb_campaign"]
+                    }
+                ]
+            },
+            { 
+                "name": "support_source", 
+                "display" : "Support Source", 
+                "statements" : [
+                    {
+                        "statement" : "is",
+                        "fields" : ["selectize:support_source"]
+                    },
+                    {
+                        "statement" : "is not",
+                        "fields" : ["selectize:support_source"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "updated_at", 
+                "display" : "Updated At", 
+                "statements" : [
+                    {
+                        "statement" : "is", 
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is not",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "is in the last",
+                        "fields" : ["days"]
+                    },
+                    {
+                        "statement" : "not in the last",
+                        "fields" : ["days"]
+                    },
+                    {
+                        "statement" : "is within",
+                        "fields" : [{"type" : "days", "field" : "number_1"}, "and", {"type" : "days", "field" : "number_1"}, "day(s)"]
+                    },
+                    {
+                        "statement" : "before",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is before or on",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "after",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is after or on",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is between",
+                        "fields" : [{"type" : "date", "field" : "date_1"}, "and", {"type" : "date", "field" : "date_2"}]
+                    }
+                ]
+            }
+        ]
+    },
+    "social" : {
+        "title" : "Social",
+        "subcriteria" : [
+            { 
+                "name": "social_network", 
+                "display" : "Social Network", 
+                "statements" : [
+                    {
+                        "statement" : "exists",
+                        "fields" : ["select"],
+                        "select" : ["Facebook", "Twitter"]
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : ["select"],
+                        "select" : ["Facebook", "Twitter"]
+                    }
+                ]
+            },
+            { 
+                "name": "facebook_url", 
+                "display" : "Facebook URL", 
+                "statements" : [
+                    {
+                        "statement" : "is", 
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "is not",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "contains",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "does not contain",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "twitter_url", 
+                "display" : "Twitter URL", 
+                "statements" : [
+                    {
+                        "statement" : "is", 
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "is not",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "contains",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "does not contain",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "linked_in_url", 
+                "display" : "LinkedIn URL", 
+                "statements" : [
+                    {
+                        "statement" : "is", 
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "is not",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "contains",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "does not contain",
+                        "fields" : ["input"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "facebook_linked", 
+                "display" : "Facebook Linked", 
+                "statements" : [
+                    {
+                        "statement" : "Yes",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "No",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "twitter_linked", 
+                "display" : "Twitter Linked", 
+                "statements" : [
+                    {
+                        "statement" : "Yes",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "No",
+                        "fields" : []
+                    }
+                ]
+            }
+        ]
+    },
+    "webinars" : {
+        "title" : "Webinars",
+        "subcriteria" : [
+            { 
+                "name": "all_webinars", 
+                "display" : "All Webinars", 
+                "statements" : [
+                    {
+                        "statement" : "with any",
+                        "fields" : ["selectize:webinars"]
+                    },
+                    {
+                        "statement" : "with none",
+                        "fields" : ["selectize:webinars"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "single_webinars", 
+                "display" : "Single Webinars", 
+                "statements" : [
+                    {
+                        "statement" : "with any",
+                        "fields" : ["selectize:webinars_single"]
+                    },
+                    {
+                        "statement" : "with none",
+                        "fields" : ["selectize:webinars_single"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "series_webinars", 
+                "display" : "Series Webinars", 
+                "statements" : [
+                    {
+                        "statement" : "with any",
+                        "fields" : ["selectize:webinars_series"]
+                    },
+                    {
+                        "statement" : "with none",
+                        "fields" : ["selectize:webinars_series"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "sequence_webinars", 
+                "display" : "Sequence Webinars", 
+                "statements" : [
+                    {
+                        "statement" : "with any",
+                        "fields" : ["selectize:webinars_sequence"]
+                    },
+                    {
+                        "statement" : "with none",
+                        "fields" : ["selectize:webinars_sequence"]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    }
+                ]
+            },
+            { 
+                "name": "most_recent_date", 
+                "display" : "Most Recent Date", 
+                "statements" : [
+                    {
+                        "statement" : "is", 
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is not",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "is in the last",
+                        "fields" : ["days"]
+                    },
+                    {
+                        "statement" : "not in the last",
+                        "fields" : ["days"]
+                    },
+                    {
+                        "statement" : "is within",
+                        "fields" : [{"type" : "days", "field" : "number_1"}, "and", {"type" : "days", "field" : "number_1"}, "day(s)"]
+                    },
+                    {
+                        "statement" : "before",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is before or on",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "after",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is after or on",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is between",
+                        "fields" : [{"type" : "date", "field" : "date_1"}, "and", {"type" : "date", "field" : "date_2"}]
+                    }
+                ]
+            }
+        ]
+    },
+    "comtool" : {
+        "title" : "Comtool",
+        "subcriteria" : [
+            { 
+                "name": "comtool_email_blast", 
+                "display" : "Email Blast", 
+                "statements" : [
+                    {
+                        "statement" : "opened",
+                        "fields" : ["selectize:email_blasts"]
+                    },
+                    {
+                        "statement" : "not opened",
+                        "fields" : ["selectize:email_blasts"]
+                    },
+                    {
+                        "statement" : "clicked link",
+                        "fields" : ["selectize:email_blasts"]
+                    },
+                    {
+                        "statement" : "not clicked link",
+                        "fields" : ["selectize:email_blasts"]
+                    },
+                    {
+                        "statement" : "bounced",
+                        "fields" : ["selectize:email_blasts"]
+                    },
+                    {
+                        "statement" : "delivered",
+                        "fields" : ["selectize:email_blasts"]
+                    },
+                    {
+                        "statement" : "marked as spam",
+                        "fields" : ["selectize:email_blasts"]
+                    },
+                    {
+                        "statement" : "not marked as spam",
+                        "fields" : ["selectize:email_blasts"]
+                    },
+                    {
+                        "statement" : "rejected",
+                        "fields" : ["selectize:email_blasts"]
+                    },
+                    {
+                        "statement" : "not rejected",
+                        "fields" : ["selectize:email_blasts"]
+                    }
+                ]
+            },
+            { 
+                "name": "comtool_notification", 
+                "display" : "Notification", 
+                "statements" : [
+                    {
+                        "statement" : "opened",
+                        "fields" : ["selectize:notifications"]
+                    },
+                    {
+                        "statement" : "not opened",
+                        "fields" : ["selectize:notifications"]
+                    },
+                    {
+                        "statement" : "clicked link",
+                        "fields" : ["selectize:notifications"]
+                    },
+                    {
+                        "statement" : "not clicked link",
+                        "fields" : ["selectize:notifications"]
+                    }
+                ]
+            }
+        ]
+    },
+    "cosaction" : {
+        "title" : "COSAction",
+        "subcriteria" : [
+            { 
+                "name": "cosa_first_login", 
+                "display" : "First Login", 
+                "statements" : [
+                    {
+                        "statement" : "is", 
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is not",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "is in the last",
+                        "fields" : ["days"]
+                    },
+                    {
+                        "statement" : "not in the last",
+                        "fields" : ["days"]
+                    },
+                    {
+                        "statement" : "is within",
+                        "fields" : [{"type" : "days", "field" : "number_1"}, "and", {"type" : "days", "field" : "number_1"}, "day(s)"]
+                    },
+                    {
+                        "statement" : "before",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is before or on",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "after",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is after or on",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is between",
+                        "fields" : [{"type" : "date", "field" : "date_1"}, "and", {"type" : "date", "field" : "date_2"}]
+                    }
+                ]
+            },
+            { 
+                "name": "cosa_last_activity", 
+                "display" : "Last Activity", 
+                "statements" : [
+                    {
+                        "statement" : "is", 
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is not",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "exists",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "does not exist",
+                        "fields" : []
+                    },
+                    {
+                        "statement" : "is in the last",
+                        "fields" : ["days"]
+                    },
+                    {
+                        "statement" : "not in the last",
+                        "fields" : ["days"]
+                    },
+                    {
+                        "statement" : "is within",
+                        "fields" : [{"type" : "days", "field" : "number_1"}, "and", {"type" : "days", "field" : "number_1"}, "day(s)"]
+                    },
+                    {
+                        "statement" : "before",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is before or on",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "after",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is after or on",
+                        "fields" : [{"type" : "date", "field" : "date_1"}]
+                    },
+                    {
+                        "statement" : "is between",
+                        "fields" : [{"type" : "date", "field" : "date_1"}, "and", {"type" : "date", "field" : "date_2"}]
+                    }
+                ]
+            },
+            { 
+                "name": "cosa_platform", 
+                "display" : "Platform", 
+                "statements" : [
+                    {
+                        "statement" : "IOS",
+                        "fields" : ["select", "date"],
+                        "select" : [
+                            {
+                                "statement" : "is", 
+                                "fields" : [{"type" : "date", "field" : "date_1"}]
+                            },
+                            {
+                                "statement" : "is not",
+                                "fields" : [{"type" : "date", "field" : "date_1"}]
+                            },
+                            {
+                                "statement" : "exists",
+                                "fields" : []
+                            },
+                            {
+                                "statement" : "does not exist",
+                                "fields" : []
+                            },
+                            {
+                                "statement" : "is in the last",
+                                "fields" : ["days"]
+                            },
+                            {
+                                "statement" : "not in the last",
+                                "fields" : ["days"]
+                            },
+                            {
+                                "statement" : "is within",
+                                "fields" : ["days", "and", "days", "day(s)"]
+                            },
+                            {
+                                "statement" : "before",
+                                "fields" : [{"type" : "date", "field" : "date_1"}]
+                            },
+                            {
+                                "statement" : "is before or on",
+                                "fields" : [{"type" : "date", "field" : "date_1"}]
+                            },
+                            {
+                                "statement" : "after",
+                                "fields" : [{"type" : "date", "field" : "date_1"}]
+                            },
+                            {
+                                "statement" : "is after or on",
+                                "fields" : [{"type" : "date", "field" : "date_1"}]
+                            },
+                            {
+                                "statement" : "is between",
+                                "fields" : ["date", "date"]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }    
+}
