@@ -97,25 +97,23 @@ class FilterWidget {
 
         this.target.html(card);
 
-        this.getFilterData('a', res => {    
-            this._prefillList = res;   
+        // this.getFilterData('a', res => {    
+        //     this._prefillList = res;   
      
-            $('#select-lists').selectize({
-                options: res,
-                labelField: "title",
-                valueField: "id",
-                searchField: ["title"],
-                preload: true,
-                load: this.getFilterData
-            });
-        });      
+        //     $('#select-lists').selectize({
+        //         options: res,
+        //         labelField: "title",
+        //         valueField: "id",
+        //         searchField: ["title"],
+        //         preload: true,
+        //         load: this.getFilterData
+        //     });
+        // });      
         
         this.createSaveAsModal();
     }
 
     getFilterData (query, callback) {
-        // Short circuit for use outside of dev enviroment.
-        return callback();
         if (!query.length) return callback();
 
         $.ajax({
@@ -140,8 +138,6 @@ class FilterWidget {
     }
 
     saveFilterToServer (data) {
-        // Short circuit for use outside of dev enviroment.
-        return data;
         $.ajax({
             "url": 'api.php',
             "method": 'POST',
@@ -164,8 +160,6 @@ class FilterWidget {
     }
 
     getFilterResults (query) {
-        // Short circuit for use outside of dev enviroment.
-        return null;
         return $.ajax({
             "url": 'api.php',
             "method": 'POST',
@@ -193,12 +187,12 @@ class FilterWidget {
         let json = this.getFilterJson();
         this._filterJson = json;
 
-        this.getFilterResults(json).then(res => {
-            this.filterResults = res;
-            this.setReturnedCount(res.data.total);
-            this._filterCallback(res);
-            $('.filterwidget-loading').first().addClass('d-none');
-        });
+        // this.getFilterResults(json).then(res => {
+        //     this.filterResults = res;
+        //     this.setReturnedCount(res.data.total);
+        //     this._filterCallback(res);
+        //     $('.filterwidget-loading').first().addClass('d-none');
+        // });
     }
 
     setReturnedCount(count) {
@@ -226,7 +220,7 @@ class FilterWidget {
             resource_type: $('.filter-type.active').data('value')
         }
 
-        this.saveFilterToServer(params);
+        //this.saveFilterToServer(params);
     }
 
     createSaveAsModal() {
@@ -1194,7 +1188,7 @@ class FilterWidget {
         $(this.target).on('click', '.clear-conditions', function(e) {
             if ($(e.target).hasClass('btn')) {
                 $('.criteria-container').empty();
-                thisClass.getFilterResultsFromSelection();
+                //thisClass.getFilterResultsFromSelection();
             }
         });
 
@@ -1209,7 +1203,7 @@ class FilterWidget {
         // Apply Filter button.
         $(this.target).on('click', '.apply-filter', function(e) {
             if ($(e.target).hasClass('btn')) {
-                thisClass.getFilterResultsFromSelection();
+                //thisClass.getFilterResultsFromSelection();
             }
         });
 
@@ -1296,7 +1290,7 @@ class FilterWidget {
                 });
             } 
 
-            thisClass.getFilterResultsFromSelection();
+            //thisClass.getFilterResultsFromSelection();
         });
 
         // Populate filter from select change.
@@ -1304,13 +1298,13 @@ class FilterWidget {
             let list = thisClass._prefillList;
             let selected = $(e.target).val();
             let selectedRecord = list.filter(r => r.id == selected);
-            thisClass.setFilterFromJson(selectedRecord[0].criteria);
-            thisClass.getFilterResultsFromSelection();
+            //thisClass.setFilterFromJson(selectedRecord[0].criteria);
+            //thisClass.getFilterResultsFromSelection();
         });
 
         // Update when input is exited.
         $(this.target).on('focusout', '.criteria-container input', function(e) {
-            thisClass.getFilterResultsFromSelection();
+            //thisClass.getFilterResultsFromSelection();
         });
 
         // Handle filter-type toggle buttons.
